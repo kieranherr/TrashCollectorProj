@@ -26,5 +26,6 @@ namespace TrashCollector.Data
             }
             );
         }
+        public DbSet<TrashCollector.Models.Employee> Employee { get; set; }
     }
 }
