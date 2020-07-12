@@ -24,6 +24,27 @@ namespace TrashCollector.Data
                 Name = "Admin",
                 NormalizedName = "ADMIN"
             }
+
+            );
+            base.OnModelCreating(builder);
+            builder.Entity<IdentityRole>()
+            .HasData(
+            new IdentityRole
+            {
+                Name = "Customer",
+                NormalizedName = "CUSTOMER"
+            }
+
+            );
+            base.OnModelCreating(builder);
+            builder.Entity<IdentityRole>()
+            .HasData(
+            new IdentityRole
+            {
+                Name = "Employee",
+                NormalizedName = "EMPLOYEE"
+            }
+
             );
         }
         public DbSet<TrashCollector.Models.Employee> Employee { get; set; }
