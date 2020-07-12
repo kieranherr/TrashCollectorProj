@@ -9,6 +9,7 @@ namespace TrashCollector.Models
     public class Employee
     {
         [Key]
+        public int ID { get; set; }
         public bool pickup { get; set;  }
         public string FirstName { get; set; }
         public string Lastname { get; set; }
