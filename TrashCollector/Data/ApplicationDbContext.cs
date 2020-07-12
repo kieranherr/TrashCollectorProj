@@ -26,26 +26,26 @@ namespace TrashCollector.Data
             }
 
             );
-            base.OnModelCreating(builder);
-            builder.Entity<IdentityRole>()
-            .HasData(
-            new IdentityRole
-            {
-                Name = "Customer",
-                NormalizedName = "CUSTOMER"
-            }
+            //base.OnModelCreating(builder);
+            //builder.Entity<IdentityRole>()
+            //.HasData(
+            //new IdentityRole
+            //{
+            //    Name = "Customer",
+            //    NormalizedName = "CustomerModel"
+            //}
 
-            );
-            base.OnModelCreating(builder);
-            builder.Entity<IdentityRole>()
-            .HasData(
-            new IdentityRole
-            {
-                Name = "Employee",
-                NormalizedName = "EMPLOYEE"
-            }
+            //);
+            //base.OnModelCreating(builder);
+            //builder.Entity<IdentityRole>()
+            //.HasData(
+            //new IdentityRole
+            //{
+            //    Name = "Employee",
+            //    NormalizedName = "EMPLOYEE"
+            //}
 
-            );
+            //);
         }
         public DbSet<TrashCollector.Models.Employee> Employee { get; set; }
         public DbSet<TrashCollector.Models.CustomerModel> CustomerModel { get; set; }
